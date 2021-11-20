@@ -1,0 +1,98 @@
+@import url("./normalize.css");
+
+:root{
+    --color-text:#666;
+    --color-high-text:#13227a;
+    --color-tint:#616eb9;
+    --color-background:rgb(247, 247, 247);
+    --font-size:14px;
+    --line-height:1.5;
+}
+
+::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: '苹方',Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: '苹方',Arial, Helvetica, sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--color-background);
+    color:var(--color-text);
+    width: 100vw;
+    padding: 0 0;
+}
+
+.login .el-form-item__label{
+    color: white;
+    font-size: 17px;
+}
+
+.volunteerAside .el-menu-item{
+    font-size: 15px;
+}
+
+.publish .el-form-item__label{
+    font: 17px '阿里巴巴普惠体';
+    padding-bottom: 10px;
+}
+
+.publish .el-form-item{
+    margin-bottom: 15px;
+}
+
+.detail-header .el-page-header__content{
+    color: white;
+}
+
+/* .register .form .el-form-item__label{
+    
+    width: 82px !important;
+    height: 40px !important;
+} */
+
+a{
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.clear-fix::after,.clear-fix::before{
+    clear: both;
+    content: '';
+    display: table;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.clear-fix{
+    zoom: 1;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
