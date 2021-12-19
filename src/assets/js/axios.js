@@ -4,6 +4,7 @@ import { message } from 'ant-design-vue';
 
 // axios.defaults.baseURL = ''  //正式
 axios.defaults.baseURL = 'https://www.fastmock.site/mock/219f2a4d01e826eeff1491024c86c2ba/servers-control' //测试
+// axios.defaults.baseURL = 'http://localhost:53000' //测试
 
 //post请求头
 axios.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded;charset=UTF-8";
@@ -32,12 +33,13 @@ axios.interceptors.response.use(
     }
 );
 export default {
-    post(url, data) {
+    post(url, data, headers) {
         return new Promise((resolve, reject) => {
             axios({
                     method: 'post',
                     url,
                     data: qs.stringify(data),
+                    headers:headers
                 })
                 .then(res => {
                     resolve(res.data)
@@ -48,12 +50,13 @@ export default {
         })
     },
 
-    get(url, data) {
+    get(url, data, headers) {
         return new Promise((resolve, reject) => {
             axios({
                     method: 'get',
                     url,
                     params: data,
+                    headers:headers
                 })
                 .then(res => {
                     resolve(res.data)

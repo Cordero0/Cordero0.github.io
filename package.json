@@ -15,7 +15,7 @@
     "css-loader": "^6.4.0",
     "echarts": "^5.2.1",
     "less": "^4.1.2",
-    "sass-loader": "^7.0.3",
+    "node-sass": "^7.0.0",
     "style-loader": "^3.3.1",
     "tinymce": "^5.10.1",
     "twemoji": "^13.1.0",
@@ -33,15 +33,21 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
+    "eslint-plugin-vue": "^7.20.0",
     "less-loader": "^7.3.0",
+    "sass-loader": "^7.0.3",
     "style-resources-loader": "^1.4.1",
-    "vue-cli-plugin-style-resources-loader": "^0.1.5"
+    "vue-cli-plugin-style-resources-loader": "^0.1.5",
+    "webpack": "^4.0.0"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "es6": true
+    },
+    "globals": {
+      "process": true
     },
     "extends": [
       "plugin:vue/vue3-essential",

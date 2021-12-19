@@ -1,5 +1,5 @@
 <template>
-  <div class="login">
+  <div class="login"> 
     <a-row class="input" align='middle'>
       <a-col :offset='8' class="inputs-container">
         <div class="login-form-container clear-fix">
@@ -10,7 +10,7 @@
             </a-form-item>
             <a-form-item :label="t('login.password')">
               <a-input-password style="height:36px" v-model:value="userAccount.password" placeholder="input password" />
-            </a-form-item>
+            </a-form-item> 
             <a-form-item :wrapper-col='{span:19,offset:6}'>
               <a-button @click="signIn" type="primary">{{t('login.signIn')}}</a-button>
               <a-button @click="signUp" style="marginLeft:17px;marginTop:10px">{{t('login.signUp')}}</a-button>
@@ -66,8 +66,8 @@ export default {
           }else{
             message.warning('wrong password!')
           }
-        }
-      })
+        } 
+      }) 
       if(res){
         return true
       }

@@ -5,6 +5,7 @@
       <a-radio-button value="editor">{{t('test.editor')}}</a-radio-button>
       <a-radio-button value="admin">{{t('test.admin')}}</a-radio-button>
     </a-radio-group>
+    <!-- <button @click="test">test</button> -->
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import { ref } from '@vue/reactivity'
 import { watch } from '@vue/runtime-core'
 import { useStore } from 'vuex'
 import { useI18n } from 'vue-i18n'
+// import axios from '@/assets/js/axios'
 
 export default {
   name: "test",
@@ -25,6 +27,12 @@ export default {
     watch(role,(role)=>{
       store.commit('changeRole',role)
     })
+
+    // const test = ()=>{
+    //   axios.post('/test',{},{token:'e1546354a'}).then(data=>{
+    //     console.log(data.userInfo.token)
+    //   })
+    // }
 
     return{
       role,t
