@@ -11,6 +11,10 @@ module.exports = {
     config.resolve.alias.set('vue-i18n', 'vue-i18n/dist/vue-i18n.cjs.js')
   },
   publicPath: process.env.NODE_ENV === 'production' ?
+<<<<<<< HEAD
         '/vue3-admin/dist/' :
+=======
+        '/vue3-admin/' :
+>>>>>>> ec372c0e79b35af3804056ab2d8f28e8de0dff4f
         '/'
 }
